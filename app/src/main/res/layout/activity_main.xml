@@ -15,7 +15,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/tv_des"
-        android:background="@drawable/bg_new2"
+        android:background="@drawable/bg_rong_haha"
         />
 
     <Button
