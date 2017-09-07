@@ -89,7 +89,6 @@ public class ToggleExpandableTextView extends TextView implements View.OnClickLi
         mAnimationDuration = typedArray.getInt(R.styleable.ExpandableTextView_animDuration, DEFAULT_ANIM_DURATION);
         mAnimAlphaStart = typedArray.getFloat(R.styleable.ExpandableTextView_animAlphaStart, DEFAULT_ANIM_ALPHA_START);
         useToggleDefualtAnimator = typedArray.getBoolean(R.styleable.ExpandableTextView_useToggleViewDefaultAnimator, DEFAULT_USE_TOGGLEVIEW_ANIMATOR);
-        int d=1;
         typedArray.recycle();
 
     }
