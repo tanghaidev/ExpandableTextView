@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExpandableTextView.iml" filepath="$PROJECT_DIR$/ExpandableTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ExpandableTextView-app.iml" filepath="$PROJECT_DIR$/app/ExpandableTextView-app.iml" group="ExpandableTextView/app" />
+      <module fileurl="file://$PROJECT_DIR$/lib/ExpandableTextView-lib.iml" filepath="$PROJECT_DIR$/lib/ExpandableTextView-lib.iml" group="ExpandableTextView/lib" />
+      <module fileurl="file://$PROJECT_DIR$/android-ExpandableTextView.iml" filepath="$PROJECT_DIR$/android-ExpandableTextView.iml" group="ExpandableTextView" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
     </modules>
