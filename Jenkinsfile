@@ -13,12 +13,12 @@ pipeline{
                 sh './gradlew assembleDebug'  //③
                 archiveArtifacts '**/*.apk'
              }
-             post {
-                 success {
-                       // Notify if the upload succeeded
-                       mail to: '492295503@qq.com', subject: 'New build available!', body: 'Check it out!'
-                 }
-             }
+            // post {
+            //                   success {
+             //                        // Notify if the upload succeeded
+             //                        mail to: '492295503@qq.com', subject: 'New build available!', body: 'Check it out!'
+              //                 }
+              //             }
         }
 
     }
