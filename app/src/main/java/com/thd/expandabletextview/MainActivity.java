@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         mTv1 = (TextView) findViewById(R.id.tv_des);
 
         //change something
+
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
