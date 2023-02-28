@@ -1,0 +1,46 @@
+name: Build PacPort app
+
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  buildBeta:
+    name: buildBeta
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Checkout
+      #   uses: actions/checkout@v3
+      - name: release beta
+        run: |
+          echo "Distribution_pac_demo_key：${{secrets.Distribution_pac_demo_key}}"
+          echo "APP_STORE_CONNECT_API_KEY_ID：${{secrets.APP_STORE_CONNECT_API_KEY_ID}}"
+          echo "secrets:${{secrets}}"
+          echo 'github: ${{ toJSON(github) }}'
+          echo 'secrets: ${{ toJSON(secrets) }}'
+          echo 'env: ${{ toJSON(env) }}'
+          echo 'vars: ${{ toJSON(vars) }}'
+          echo 'steps: ${{ toJSON(steps) }}'
+          echo 'runner: ${{ toJSON(runner) }}'
+          echo 'strategy: ${{ toJSON(strategy) }}'
+          echo 'needs: ${{ toJSON(needs) }}'
+          echo 'inputs: ${{ toJSON(inputs) }}'
+          
+        # run: |
+          # base64 -D -o d.p12 \<<< ${{vars.Distribution_pac_demo_key}}
+          # base64 -D -o pacport_demo_profile.mobileprovision \<<< $Distribution_pac_demo_profile_key
+          # export connect_key=$APP_STORE_CONNECT_API_KEY_ID
+          # export connect_issuer=$APP_STORE_CONNECT_API_ISSUER_ID
+          # export connect_key_content=$APP_STORE_CONNECT_API_P8FILE
+          # # export ITMSTRANSPORTER_FORCE_ITMS_PACKAGE_UPLOAD=true
+          # fastlane beta keypath:`pwd` # Run tests using Fastlae
+
+
+
+
+
+
+
